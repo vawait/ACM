@@ -39,7 +39,6 @@ struct nodd
 
 void add(int x,int y,int d)
 {
-    //printf("%d %d %d\n",x,y,d);
     b[++t].y = y; b[t].d = d;
     b[t].n = a[x]; a[x] = t;
     b[++t].y = x; b[t].d = 0;
