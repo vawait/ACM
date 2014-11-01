@@ -1,7 +1,7 @@
 /*
  * Author:  vawait
  * Created Time:  2014/11/1 13:04:35
- * Problem: SPOJ_KSEQ.cpp
+ * Problem: SPOJ_KSEQ
  */
 #include<cstdio>
 #include<iostream>

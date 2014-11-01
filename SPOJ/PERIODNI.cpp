@@ -1,7 +1,7 @@
 /*
  * Author:  vawait
  * Created Time:  2014/11/1 20:59:53
- * Problem: SPOJ_PERIODNI.cpp
+ * Problem: SPOJ_PERIODNI
  */
 #include<cstdio>
 #include<iostream>
