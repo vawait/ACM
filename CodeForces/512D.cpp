@@ -56,6 +56,13 @@ lint km(lint a,lint n)
     return s;
 }
 
+int DfsFind2(int t,int fa)
+{
+    if ( cir[t] ) return 1;
+    red(i,g[t].size()-1,0) if ( g[t][i] != fa && DfsFind2( g[t][i] , t ) ) return 1;
+    return 0;
+}
+
 void init()
 {
     int x , y;
@@ -70,6 +77,14 @@ void init()
     rep(i,1,n) {
         clr( vis , 0 );
         DfsFind( i , 0 , i );
+    }
+    
+    rep(k,1,n) if ( !cir[k] ) {
+        rep(i,1,n) if( !cir[i] ) {
+            int sum = 0;
+            red(j,g[i].size()-1,0) sum += DfsFind2( g[i][j] , i );
+            if ( sum > 1 ) cir[i] = 1;
+        }
     }
     
     rep(i,0,n)
