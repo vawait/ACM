@@ -1,7 +1,7 @@
 /*
  * Author:  vawait
  * Created Time:  2015/9/11 14:17:42
- * Problem: SPOJ LCS
+ * Problem: SPOJ LCS Longest Common Substring
  */
 #include<cstdio>
 #include<iostream>
